@@ -1,40 +1,23 @@
-## Ruby Data Types
-1. string = 문자열
-2. number = 숫자
-3. boolean = true || false
+## Ruby
+👍 Ruby 기본 문법 학습을 위한 레파지토리 입니다.
 
-## Ruby Naming
-지역변수, 메서드 매개변수, 메서드 이름은 소문자, 밑줄로 시작
-*ex : name, get_hello*
+루비는 객체 지향 언어이다.
 
-전역변수는 $ 기호로 시작한다.
-*ex : $name, $count*
 
-인스턴스 변수는 @ 기호로 시작한다.
-*ex : @name, @point*
+### 네이밍 규칙
+지역 변수 : 소문자나 _ 기호로 시작해야 된다. *ex) name, count*
+인스턴스 변수 : @ 기호로 시작해야 한다. *ex) @name, @count*
+전역 변수 : $ 기호로 시작해야 한다. *ex) $name, $count*
+클래스 변수 : @@ 기호로 시작해야 한다. *ex) @@name, @@count*
+클래스 이름 : 대문자로 시작해야 한다. *ex) String, Song*
+상수 이름 : 대문자로 시작한다. *ex) STRING, ABC_DE*
 
-클래스 변수는 @@ 기호로 시작한다.
-*ex : @@name, @@count*
+### 배열과 해시
+두가지 모두 key를 통해 value에 접근할 수 있는 객체 모음이다.   
+객체는 key에 어떠한 객체를 사용해도 된다. 하지만 배열은 정수만 가능하다.
 
-클래스이름, 상수, 모듈 이름은 대문자로 시작한다.
-*ex : Student, String*
+### 코드 블록
+{}기호 또는 do end로 구성된다. 루비의 표준 코드 양식에는 한줄의 코드는 중괄호를 여러줄의 코드는 do end로 작성하도록 나와 있다.
 
-## 제어문
-*if문*
-```ruby
-if 1 < 2
-  puts "1은 2보다 작습니다."
-else
-  puts "1은 2보다 작지 않습니다."
-end
-```
-
-*unless*
-조건이 false일때 실행됨
-```ruby
-unless 1 == 1
-  puts "다르다."
-else
-  puts "같다"
-end
-```
+### 클래스, 객체, 변수
+**클래스**
