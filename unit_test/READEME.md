@@ -160,3 +160,43 @@ class TennisScoreTest < Test::Unit::TestCase
   end
 end
 ```
+
+### Test::Unit 단언문
+1. assert | refute  
+boolean이 false나 nil이면(이 아니면)실패한다.  
+
+2. assert_block { block }  
+block의 평가 경과가 true임을 기대한다.  
+
+3. assert_ | refute_ empty(collection)  
+컬렉션 객체에 대해 empty? 메서드에 대한 결과가 true(false)일 것을 기대한다.  
+
+4. assert_ | refute_ equal(exp, act, msg = nil)  
+== 연산자를 통해 act의 값이 exp와 같을 것을(같지 않을 것을) 기대한다.  
+
+5. assert_ | refute_ in_delta(exp_float, act_float, delta, msg = nil)  
+act의 부동소수점 값이 기대값(exp)의 오차범위안에 포함되거나 포함되지 안을 것을 기대한다.  
+
+6. assert_ | refute_ includes(col, obj, msg = nil)  
+컬렉션에 대해 incldue?(obj)의 결과가 true(false)일 것을 기대한다.  
+
+7. assert_ | refute_ instance_of(klass, obj, meg = nil)  
+obj가 klass의 인스턴스일 것을(가 아닐 것을) 기대한다.  
+
+8. assert_ | refute_ match(pattern, str, msg = nil)  
+주어진 문자열이 정규표현식에 매치할 것을(하지 않을 것을) 기대한다.  
+
+9. assert_ | refute_ nil(obj, msg = nil)  
+obj가 nil일 것을(아닐 것을) 기대한다.  
+
+10. assert_ | refute_ operator(obj1, operator, obj2, msg = nil)  
+operator 메시지를 obj1에, obj2를 매개변수로 호출한 결과가 true(false)일 것을 기대한다.  
+
+11. assert_raises(Exception, msg = nil) { block }  
+block을 평가하는 동안 매개변수로 주어진 예외 중 하나가 발생하기를 기대한다.  
+
+12. assert_ | refute_ respond_to(obj, method, msg = nil)  
+obj가 주어진 메서드에 반응하거나(반응하지 않을 것을) 기대한다.  
+
+13. assert_send(arr, msg = nil)  
+arr[0]의 객체에 arr[2]이후의 값을 매개변수로 arr[1]의 메서드를 호출하고 결과값이 true일것을 기대한다. 
